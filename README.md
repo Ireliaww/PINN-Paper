@@ -130,7 +130,7 @@ PINN-Paper/
 ### PINN (Physics-Informed Neural Network)
 A fully-connected MLP with `tanh` activation approximates all 10 field variables simultaneously.  The training minimises:
 
-$$\mathcal{L}_{\text{PINN}} = \underbrace{0.1\,\mathcal{L}_{\text{PDE}_1} + 0.1\,\mathcal{L}_{\text{PDE}_2}}_{\text{interior residuals}} + \underbrace{\mathcal{L}_{\text{BC}^+} + \mathcal{L}_{\text{BC}^-} + \mathcal{L}_{\text{IC}}}_{\text{boundary \& interface}}$$
+$$\mathcal{L}_{\text{PINN}} = \underbrace{0.1\,\mathcal{L}_{\text{PDE}_1} + 0.1\,\mathcal{L}_{\text{PDE}_2}}_{\text{interior residuals}} + \underbrace{\mathcal{L}_{\text{BC}^+} + \mathcal{L}_{\text{BC}^-} + \mathcal{L}_{\text{IC}}}_{\text{boundary and interface}}$$
 
 where each term is an MSE (Mean Squared Error) loss enforcing the corresponding condition.
 
